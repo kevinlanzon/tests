@@ -5,5 +5,5 @@ Technologies used
 ----
 - JavaScript
 - jQuery
-- Html5
+- HTML5
 - CSS3
