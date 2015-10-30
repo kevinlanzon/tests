@@ -1,0 +1,66 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+section {
+  padding-top: 150px;
+}
+
+form {
+  max-width: 300px;
+  margin: auto;
+  padding: 10px 20px;
+  background: #FFD000;
+  border-radius: 8px;
+}
+
+.form-title {
+  margin: 0 0 30px 0;
+  text-align: center;
+  color: #191400;
+  font-size: 2em;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  border: none;
+  font-size: 16px;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  background-color: #191400;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+}
+
+#error-message {
+  text-align: center;
+  color: #FF0000;
+  padding-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #191400;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+}

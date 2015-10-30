@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Junior Front-End Developer Test</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- the above line of code stops the desktop version displaying on mobile -->
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo">
+        <h1>Front-End Developer Test</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="selected">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <section>
+        <form id="login-form" action="" method="get">
+          <div id="loading" class="form-title">Login</div>
+            <input name="username" type="text" id="username" placeholder="Username"/>
+            <input name="password" type="password" id="password" placeholder="Password"/>
+            <div id="error-message"></div>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </section>
+      <footer>
+        <a href="http://twitter.com/LanzonK"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <p>&copy; 2015 Kevin Lanzon</p>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+  </body>
+</html>
