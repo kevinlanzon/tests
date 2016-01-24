@@ -14,6 +14,8 @@ var findLatestFxRate = function(fxRates, fromCcy, toCcy) {
     for (var i = 0; i < orderedFxRates.length; i++) {
       if (orderedFxRates[i].FROM_CCY === fromCcy && orderedFxRates[i].TO_CCY === toCcy) {
         return foundRate = orderedFxRates[i].RATE;
+      } else if (orderedFxRates[i].FROM_CCY === toCcy && orderedFxRates[i].TO_CCY === fromCcy && foundRate === null) {
+        return foundRate = 1 / orderedFxRates[i].RATE;
       }
     }
   }

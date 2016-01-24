@@ -44,4 +44,12 @@ describe("#findLatestFxRate", function() {
   it("should find the latest rate from EUR to USD", function() {
     expect(findLatestFxRate(fxRates, "EUR", "USD")).toEqual(1.2);
   });
+
+  it("should return a base rate if currency codes do not match the 'fromCcy' and 'toCcy' inputs", function() {
+    expect(findLatestFxRate(fxRates, "USD", "GBP")).toEqual(0.6666666666666666);
+  });
 });
+
+
+
+
