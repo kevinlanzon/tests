@@ -55,7 +55,3 @@ describe("#findLatestFxRate", function() {
     }).toThrow(Error("No rate found"));
   });
 });
-
-
-
-
