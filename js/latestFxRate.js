@@ -19,4 +19,10 @@ var findLatestFxRate = function(fxRates, fromCcy, toCcy) {
       }
     }
   }
+
+  if (foundRate === null) {
+    throw new Error("No rate found");
+  } else {
+    return foundRate;
+  }
 };

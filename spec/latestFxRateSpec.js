@@ -48,6 +48,12 @@ describe("#findLatestFxRate", function() {
   it("should return a base rate if currency codes do not match the 'fromCcy' and 'toCcy' inputs", function() {
     expect(findLatestFxRate(fxRates, "USD", "GBP")).toEqual(0.6666666666666666);
   });
+
+  it("should throw an error for FX codes that do not exist in the array", function() {
+    expect(function() {
+      findLatestFxRate(fxRates, "JPY", "CNY");
+    }).toThrow(Error("No rate found"));
+  });
 });
 
 
