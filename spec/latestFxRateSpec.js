@@ -36,4 +36,12 @@ describe("#findLatestFxRate", function() {
   it("should return 1 for GBP to GBP", function() {
     expect(findLatestFxRate(fxRates, "GBP", "GBP")).toEqual(1);
   });
+
+  it("should find the latest rate from GBP to USD", function() {
+    expect(findLatestFxRate(fxRates, "GBP", "USD")).toEqual(1.5);
+  });
+
+  it("should find the latest rate from EUR to USD", function() {
+    expect(findLatestFxRate(fxRates, "EUR", "USD")).toEqual(1.2);
+  });
 });
