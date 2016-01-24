@@ -12,10 +12,15 @@ var findLatestFxRate = function(fxRates, fromCcy, toCcy) {
     return foundRate = 1;
   } else {
     for (var i = 0; i < orderedFxRates.length; i++) {
-      if (orderedFxRates[i].FROM_CCY === fromCcy && orderedFxRates[i].TO_CCY === toCcy) {
-        return foundRate = orderedFxRates[i].RATE;
-      } else if (orderedFxRates[i].FROM_CCY === toCcy && orderedFxRates[i].TO_CCY === fromCcy && foundRate === null) {
-        return foundRate = 1 / orderedFxRates[i].RATE;
+
+      var from = orderedFxRates[i].FROM_CCY;
+      var to   = orderedFxRates[i].TO_CCY;
+      var rate = orderedFxRates[i].RATE;
+
+      if (from === fromCcy && to === toCcy) {
+        return foundRate = rate;
+      } else if (from === toCcy && to === fromCcy && foundRate === null) {
+        return foundRate = 1 / rate;
       }
     }
   }
