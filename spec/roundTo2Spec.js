@@ -1,3 +1,5 @@
+"use strict";
+
 describe("#roundTo2Places", function () {
 
   it("should round 100.056 to 100.06", function () {
