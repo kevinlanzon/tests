@@ -32,4 +32,8 @@ describe("#findLatestFxRate", function() {
   it("should sort the array by the date property", function() {
     expect(fxRates[2].DATE).toEqual("2016-01-21");
   });
+
+  it("should return 1 for GBP to GBP", function() {
+    expect(findLatestFxRate(fxRates, "GBP", "GBP")).toEqual(1);
+  });
 });
