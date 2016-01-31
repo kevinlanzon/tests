@@ -1,24 +1,9 @@
-CloudMargin JavaScript Test
-========
+Various Practice Tests
+================
 
-How to run tests
+Technologies used
 ----
-```sh
-$ open SpecRunner.html
-
-```
-
-File Structure
-------
-```
-- js
-  - latestFxRate.js
-  - roundTo2.js
-- lib
-  - jasmine-2.3.4
-- spec
-  - latestFxRateSpec.js
-  - roundTo2Spec.js
-- SpecRunner.html
-
-```
+- JavaScript
+- jQuery
+- HTML5
+- CSS3

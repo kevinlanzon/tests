@@ -1,0 +1,141 @@
+/********************************************
+GENERAL
+*********************************************/
+
+canvas {
+  width: 440px;
+  margin: 0 auto;
+  height: 440px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/********************************************
+HEADER
+*********************************************/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  margin: 15px 0;
+  font-size: 2.75em;
+  color: #000;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+
+
+/********************************************
+  RESPONSIVE HEADER
+*********************************************/
+
+@media screen and (min-width: 660px) {
+
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  header {
+    border-bottom: 5px solid #EBC000;
+    margin-bottom: 60px;
+  }
+}
+
+
+
+/********************************************
+INPUT FORM
+*********************************************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+section {
+  padding-top: 110px;
+}
+
+form {
+  max-width: 300px;
+  margin: auto;
+  padding: 10px 20px;
+  background: #FFD000;
+  border-radius: 8px;
+}
+
+input[type="text"],
+textarea
+select {
+  border: none;
+  font-size: 16px;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+}
+
+
+
+/********************************************
+FOOTER
+*********************************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 15px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+
+/********************************************
+COLOURS
+*********************************************/
+
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+header {
+  background: #FFD000;
+  border-color: #EBC000;
+}

@@ -1,0 +1,167 @@
+/********************************************
+GENERAL
+*********************************************/
+
+body {
+  font-family: sans-serif;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/********************************************
+HEADER
+*********************************************/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em; /* sets space between lines */
+}
+
+
+
+/********************************************
+NAVIGATION
+*********************************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block; /* puts links in a row */
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+
+
+/********************************************
+FOOTER
+*********************************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both; /*keeps the footer at the bottom*/
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+
+/********************************************
+PAGE: CONTACT
+*********************************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px; /*set the padding. Extra space on the elements left side. Img will go on left side of text*/
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+
+
+/********************************************
+COLOURS
+*********************************************/
+
+/* site body */
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+/* yellow header */
+header {
+  background: #FFD000;
+  border-color: #EBC000;
+}
+
+/* nav background on mobile */
+nav {
+  background: #EBC000;
+}
+
+/* logo text */
+h1, h2 {
+  color: #191400;
+}
+
+/* links */
+a {
+  color: #191400;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #191400;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #AB8D08;
+}
